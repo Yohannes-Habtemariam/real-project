@@ -1,0 +1,30 @@
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+$header-bg: #c0edf8fa;
+$main-bg: #f0f8ff;
+$footer-bg: #f5f5dc;
+$section-bg: #ffffe0;
+$aside-bg: #fff5ee;
+$button: #98fb98;
+$hover: #ffd700;
+$box-shadow: #f5fffa;
+$mobile: 480px;
+$tablet: 800px;
+
+$font-weights: (
+    "regular": 500,
+    "medium": 700,
+    "bold": 900,
+);
+
+@mixin flexCenter ($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}

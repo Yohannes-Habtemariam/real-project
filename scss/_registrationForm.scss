@@ -1,0 +1,366 @@
+/* Registration Form*/
+h1 {
+  text-align: center;
+  color: #008000;
+  font-size: 4rem;
+}
+.paragraph {
+  margin: 0 1rem;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: justify;
+}
+
+.registration-form{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to right,
+    rgba(144, 144, 196, 0.548),
+    rgb(184, 172, 152),
+    rgb(177, 151, 177),
+    rgb(158, 184, 158),
+    rgb(212, 203, 203),
+    rgb(169, 132, 196),
+    #99c5bc,
+    lightblue,
+    gray
+  );
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1px;
+  margin-bottom: 3rem;
+}
+
+.legend {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 6rem;
+  color: blue;
+  font-weight: bold;
+}
+
+.form{
+  display: grid;
+  flex-direction: column;
+  width: 90%;
+  margin: 2rem auto;
+  font-size: 2rem;
+  .biodata label{
+    display: block;
+  }
+  .biodata input{
+    display: block;
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .biodata select{
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .telephone label{
+    display: block;
+  }
+  .telephone input{
+    display: block;
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .country label{
+    display: block;
+  }
+  .country input{
+    display: block;
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .messages{
+    display: none;
+  }
+
+  .attach-files label{
+    display: block;
+    margin-top: 2rem;
+  }
+  .attach-files input{
+    display: block;
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+
+  input, select{
+    border-radius: 2rem;
+  }
+
+}
+
+.agree div{
+  width: 90%;
+}
+.agree button{
+  width: 90%;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  &:hover{
+    background-color: $hover;
+  }
+}
+
+
+
+// /*    Tablet and Desktop media query*/
+
+
+@media (min-width: 768px) {
+
+  h1 {
+    text-align: center;
+    color: #008000;
+    font-size: 4rem;
+  }
+  .paragraph {
+    margin: 0 15rem;
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+
+.registration-form {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5rem;
+  background: linear-gradient(
+    to right,
+    rgba(144, 144, 196, 0.548),
+    rgb(184, 172, 152),
+    rgb(177, 151, 177),
+    rgb(158, 184, 158),
+    rgb(212, 203, 203),
+    rgb(169, 132, 196),
+    #99c5bc,
+    lightblue,
+    gray
+  );
+
+  margin-left: 15rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1px;
+}
+
+.legend {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 6rem;
+  color: blue;
+  font-weight: bold;
+}
+
+.form {
+  width: 95%;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 3, 1fr;
+  column-gap: 5rem;
+  row-gap: 3rem;
+  font-size: 1.7rem;
+  margin-left: 2rem;
+}
+
+.agree {
+  grid-column: 1 / -1;
+}
+.biodata {
+  label {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  input {
+    display: block;
+    padding: 0.8rem;
+    width: 100%;
+    margin-bottom: 1.6rem;
+    border-radius: 2rem;
+    background-color: rgb(240, 247, 250);
+    cursor: pointer;
+
+    &:focus {
+      outline: 1px solid blue;
+      background-color: lightblue;
+    }
+  }
+
+  select {
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 1.6rem;
+    border-radius: 2rem;
+    background-color: rgb(240, 247, 250);
+    cursor: pointer;
+
+    &:focus {
+      outline: 1px solid blue;
+      background-color: rgb(212, 242, 252);
+    }
+  }
+}
+
+.telephone {
+  label {
+    display: block;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  input {
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    border-radius: 2rem;
+    background-color: rgb(240, 247, 250);
+    cursor: pointer;
+
+    &:focus {
+      outline: 1px solid blue;
+      background-color: rgb(212, 242, 252);
+    }
+  }
+}
+
+.language {
+  p {
+    width: 100%;
+    font-weight: bold;
+  }
+  input {
+    margin-left: 3rem;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  label {
+    padding: 1rem;
+  }
+}
+
+.country {
+  label {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  input {
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    background-color: rgb(240, 247, 250);
+    cursor: pointer;
+  }
+}
+
+.courses {
+  p {
+    width: 100%;
+    font-weight: bold;
+  }
+  input {
+    margin-left: 3rem;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+}
+
+.form .messages {
+  display: block;
+  label {
+    font-weight: bold;
+  }
+  textarea {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: rgb(240, 247, 250);
+    &:focus {
+      outline: 1px solid blue;
+      background-color: rgb(227, 233, 235);
+    }
+  }
+}
+
+.attach-files {
+  label {
+    font-weight: bold;
+  }
+  input[type="file"] {
+    font-size: 1.7rem;
+    cursor: pointer;
+  }
+}
+
+.reset {
+  p {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  input[type="reset"] {
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    background: lightblue;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+  input[type="reset"]:hover {
+    color: blue;
+    background: orange;
+  }
+}
+
+.agree {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  font-size: 2rem;
+  font-weight: bold;
+  div{
+    width: 100%;
+    input[type="checkbox"] {
+      width: 2rem;
+      height: 2rem;
+    }
+    label {
+      font-size: 1.7rem;
+      padding-right: 0;
+    }
+  }
+  button{
+    width: 50%;
+    font-size: 1.7rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 7rem;
+    background: gold;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover{
+      background-color: greenyellow;
+    }
+  }
+}
+
+}

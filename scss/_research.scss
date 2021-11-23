@@ -1,0 +1,111 @@
+
+.research-page{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    h1{
+        font-size: 4rem;
+        color: blue;
+        text-align: center;
+    }
+
+    .research-branches{
+        display: flex;
+        flex-direction: column;
+        .research{
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 4px lightgrey;
+    
+            h2{
+                text-align: center;
+                font-size: 3rem;
+            }
+
+            img{
+                width: 60%;
+                margin: 2rem auto;
+                border-radius: 1rem;
+            }
+
+            p{
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+                padding: 0 1rem;
+            }
+            a{
+                text-decoration: none;
+                color: blue;
+                margin-bottom: 1rem;
+                padding-left: 2rem;
+                line-height: 2.2rem;
+                &:hover{
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+.articles{
+    background-color: $main-bg;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.books{
+    background-color: $footer-bg;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.projects{
+    background-color: $header-bg;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+
+/*    Tablet and Desktop media query*/
+
+@media (min-width: 768px) {
+
+    .research-page{
+        display: flex;
+        flex-direction: column;
+
+        h1{
+            font-size: 4rem;
+            color: blue;
+        }
+
+        .research-branches{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            column-gap: 2rem;
+
+            .research {
+                box-shadow: 0 0 4px lightgrey;
+
+                img{
+                    width: 60%;
+                    margin: 2rem auto;
+                    border-radius: 1rem;
+                }
+
+                a{
+                    margin-left: 2rem;
+                    padding: 0.5rem 1rem;
+    
+                    &:hover{
+                        color: red;
+                        transition: 0.2s;
+                    }
+                }
+            }
+        }
+    }
+    
+}

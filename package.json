@@ -1,0 +1,22 @@
+{
+  "name": "real-project",
+  "version": "1.0.0",
+  "description": "This project is a personal project that will be used to develop a website for a business business.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yohannes-Habtemariam/real-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yohannes-Habtemariam/real-project/issues"
+  },
+  "homepage": "https://github.com/Yohannes-Habtemariam/real-project#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
